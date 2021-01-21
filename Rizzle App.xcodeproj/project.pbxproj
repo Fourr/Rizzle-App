@@ -7,19 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD306A4D25B656BC00CD8A45 /* Rizzle_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306A4C25B656BC00CD8A45 /* Rizzle_AppApp.swift */; };
-		AD306A4F25B656BC00CD8A45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306A4E25B656BC00CD8A45 /* ContentView.swift */; };
 		AD306A5125B656BF00CD8A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD306A5025B656BF00CD8A45 /* Assets.xcassets */; };
 		AD306A5425B656BF00CD8A45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD306A5325B656BF00CD8A45 /* Preview Assets.xcassets */; };
+		AD306A5D25B6581700CD8A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306A5C25B6581700CD8A45 /* AppDelegate.swift */; };
+		AD306A6025B6583E00CD8A45 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306A5F25B6583E00CD8A45 /* FeedViewController.swift */; };
+		AD306A6325B6588B00CD8A45 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306A6225B6588B00CD8A45 /* FeedViewModel.swift */; };
+		AD306A6925B6594E00CD8A45 /* FeedCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306A6825B6594E00CD8A45 /* FeedCollectionViewManager.swift */; };
+		AD306A6C25B6598400CD8A45 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306A6B25B6598400CD8A45 /* FeedCellViewModel.swift */; };
+		AD306AA825B660D200CD8A45 /* GatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306AA725B660D200CD8A45 /* GatherService.swift */; };
+		AD306AAB25B6630F00CD8A45 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306AAA25B6630F00CD8A45 /* Feed.swift */; };
+		AD306AAE25B6643500CD8A45 /* assignment.json in Resources */ = {isa = PBXBuildFile; fileRef = AD306AAD25B6643500CD8A45 /* assignment.json */; };
+		AD306ACC25B7825900CD8A45 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306ACA25B7825900CD8A45 /* FeedCollectionViewCell.swift */; };
+		AD306ACD25B7825900CD8A45 /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD306ACB25B7825900CD8A45 /* FeedCollectionViewCell.xib */; };
+		AD306AD025B7886900CD8A45 /* realFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306ACF25B7886800CD8A45 /* realFeed.swift */; };
+		AD306AD325B7DD5D00CD8A45 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD306AD225B7DD5D00CD8A45 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD306A4925B656BC00CD8A45 /* Rizzle App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rizzle App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD306A4C25B656BC00CD8A45 /* Rizzle_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rizzle_AppApp.swift; sourceTree = "<group>"; };
-		AD306A4E25B656BC00CD8A45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD306A5025B656BF00CD8A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD306A5325B656BF00CD8A45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD306A5525B656BF00CD8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD306A5C25B6581700CD8A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD306A5F25B6583E00CD8A45 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		AD306A6225B6588B00CD8A45 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		AD306A6825B6594E00CD8A45 /* FeedCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewManager.swift; sourceTree = "<group>"; };
+		AD306A6B25B6598400CD8A45 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCellViewModel.swift; sourceTree = "<group>"; };
+		AD306AA725B660D200CD8A45 /* GatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatherService.swift; sourceTree = "<group>"; };
+		AD306AAA25B6630F00CD8A45 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		AD306AAD25B6643500CD8A45 /* assignment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = assignment.json; sourceTree = "<group>"; };
+		AD306ACA25B7825900CD8A45 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD306ACB25B7825900CD8A45 /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		AD306ACF25B7886800CD8A45 /* realFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realFeed.swift; sourceTree = "<group>"; };
+		AD306AD225B7DD5D00CD8A45 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +72,18 @@
 		AD306A4B25B656BC00CD8A45 /* Rizzle App */ = {
 			isa = PBXGroup;
 			children = (
-				AD306A4C25B656BC00CD8A45 /* Rizzle_AppApp.swift */,
-				AD306A4E25B656BC00CD8A45 /* ContentView.swift */,
+				AD306A5C25B6581700CD8A45 /* AppDelegate.swift */,
+				AD306A5F25B6583E00CD8A45 /* FeedViewController.swift */,
+				AD306A6225B6588B00CD8A45 /* FeedViewModel.swift */,
+				AD306AAA25B6630F00CD8A45 /* Feed.swift */,
+				AD306ACF25B7886800CD8A45 /* realFeed.swift */,
+				AD306AA725B660D200CD8A45 /* GatherService.swift */,
+				AD306AD225B7DD5D00CD8A45 /* Utilities.swift */,
+				AD306AAD25B6643500CD8A45 /* assignment.json */,
+				AD306A6825B6594E00CD8A45 /* FeedCollectionViewManager.swift */,
+				AD306A6B25B6598400CD8A45 /* FeedCellViewModel.swift */,
+				AD306ACA25B7825900CD8A45 /* FeedCollectionViewCell.swift */,
+				AD306ACB25B7825900CD8A45 /* FeedCollectionViewCell.xib */,
 				AD306A5025B656BF00CD8A45 /* Assets.xcassets */,
 				AD306A5525B656BF00CD8A45 /* Info.plist */,
 				AD306A5225B656BF00CD8A45 /* Preview Content */,
@@ -126,7 +156,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD306AAE25B6643500CD8A45 /* assignment.json in Resources */,
 				AD306A5425B656BF00CD8A45 /* Preview Assets.xcassets in Resources */,
+				AD306ACD25B7825900CD8A45 /* FeedCollectionViewCell.xib in Resources */,
 				AD306A5125B656BF00CD8A45 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +170,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD306A4F25B656BC00CD8A45 /* ContentView.swift in Sources */,
-				AD306A4D25B656BC00CD8A45 /* Rizzle_AppApp.swift in Sources */,
+				AD306A6325B6588B00CD8A45 /* FeedViewModel.swift in Sources */,
+				AD306AAB25B6630F00CD8A45 /* Feed.swift in Sources */,
+				AD306ACC25B7825900CD8A45 /* FeedCollectionViewCell.swift in Sources */,
+				AD306AA825B660D200CD8A45 /* GatherService.swift in Sources */,
+				AD306A5D25B6581700CD8A45 /* AppDelegate.swift in Sources */,
+				AD306A6C25B6598400CD8A45 /* FeedCellViewModel.swift in Sources */,
+				AD306AD025B7886900CD8A45 /* realFeed.swift in Sources */,
+				AD306A6925B6594E00CD8A45 /* FeedCollectionViewManager.swift in Sources */,
+				AD306A6025B6583E00CD8A45 /* FeedViewController.swift in Sources */,
+				AD306AD325B7DD5D00CD8A45 /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
