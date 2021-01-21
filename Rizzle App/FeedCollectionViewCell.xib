@@ -10,40 +10,40 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeedCollectionViewCell" customModule="Rizzle_App" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="87.5"/>
+            <rect key="frame" x="0.0" y="0.0" width="140" height="250"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="87.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="140" height="250"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="all-fM-gkj">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="87.5"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vba-VE-CLd">
-                        <rect key="frame" x="0.0" y="0.5" width="50" height="87.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="103" height="40"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRS-Yp-9CN">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="87.5"/>
+                        <rect key="frame" x="0.0" y="41" width="140" height="209"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <connections>
                             <action selector="ButtonPress:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2fD-eW-dZQ"/>
                         </connections>
                     </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="all-fM-gkj">
+                        <rect key="frame" x="0.0" y="41" width="140" height="209"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="54" height="69"/>
+            <size key="customSize" width="143" height="230.5"/>
             <connections>
                 <outlet property="button" destination="JRS-Yp-9CN" id="duP-04-aTV"/>
                 <outlet property="image" destination="all-fM-gkj" id="wlN-7s-V1B"/>
                 <outlet property="titleLabel" destination="vba-VE-CLd" id="HbA-30-O0d"/>
             </connections>
-            <point key="canvasLocation" x="-872.46376811594212" y="-213.28125"/>
+            <point key="canvasLocation" x="-808.69565217391312" y="-160.04464285714286"/>
         </collectionViewCell>
     </objects>
 </document>

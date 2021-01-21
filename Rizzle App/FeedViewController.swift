@@ -10,25 +10,25 @@ import AVKit
 import AVFoundation
 
 final class FeedViewController: UIViewController {
-    
     private let viewModel = FeedViewModel()
-    
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         return UICollectionView(frame: .zero, collectionViewLayout: layout)
     }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-        configureCollectionView()
+        view.backgroundColor = .white
+        configureCollectionView(collectionView: collectionView)
+//        for n in 0...3 {
+//            viewModel.fetchFeed(number: n)
+//        }
         viewModel.fetchFeed()
         NotificationCenter.default.addObserver(self, selector: #selector(onDidReceiveData(_:)), name: .didReceiveData, object: nil)
         
     }
     
-    private func configureCollectionView() {
+    private func configureCollectionView(collectionView: UICollectionView) {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(collectionView)
         collectionView.backgroundColor = view.backgroundColor
@@ -38,6 +38,7 @@ final class FeedViewController: UIViewController {
         collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         collectionView.isPagingEnabled = true
         viewModel.configure(collectionView: collectionView)
+        self.view.addSubview(collectionView)
     }
     
     @objc func onDidReceiveData(_ notification:Notification) {

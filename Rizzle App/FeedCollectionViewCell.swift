@@ -27,7 +27,7 @@ final class FeedCollectionViewCell: UICollectionViewCell {
     }
     
     private func commonInit() {
-        contentView.backgroundColor = .blue
+        //contentView.backgroundColor = .blue
         configureConstraints()
     }
     

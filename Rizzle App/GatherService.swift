@@ -30,37 +30,22 @@ final class GatherService {
             return nil
         }
     }
-    func ConvertToRealFeed(feed: Feed) -> [[realFeed]] {
-        var multirealFeedArray = [[realFeed]]()
-        var trendingFeedArray = [realFeed]()
-        var mwFeedArray = [realFeed]()
-        var naFeedArray = [realFeed]()
-        var popularFeedArray = [realFeed]()
+    func ConvertToRealFeed(feed: Feed) -> [realFeed] {
+        var realFeedArray = [realFeed]()
         //let image = createThumbnailOfVideoFromRemoteUrl(url: feed[0].nodes[0].video.encodeURL)
         //let realFeeditem = realFeed(title: feed[0].title, url: feed[0].nodes[0].video.encodeURL, image: image!)
         //realFeedArray.append(realFeeditem)
         for item in feed {
             for deeperitem in item.nodes {
-                let image = createThumbnailOfVideoFromRemoteUrl(url: deeperitem.video.encodeURL)
-                let realFeeditem = realFeed(title: item.title, url: deeperitem.video.encodeURL, image: image!)
-                if(item.title == "Trending") {
-                    trendingFeedArray.append(realFeeditem)
-                } else if (item.title == "Must Watch") {
-                    mwFeedArray.append(realFeeditem)
-                } else if (item.title == "Newly Added") {
-                    naFeedArray.append(realFeeditem)
-                } else if (item.title == "Popular") {
-                    popularFeedArray.append(realFeeditem)
-                }
+                    let image = createThumbnailOfVideoFromRemoteUrl(url: deeperitem.video.encodeURL)
+                    let realFeeditem = realFeed(title: item.title, url: deeperitem.video.encodeURL, image: image!)
+                    realFeedArray.append(realFeeditem)
                 
             }
             
         }
-        multirealFeedArray.append(trendingFeedArray)
-        multirealFeedArray.append(mwFeedArray)
-        multirealFeedArray.append(naFeedArray)
-        multirealFeedArray.append(popularFeedArray)
-        return multirealFeedArray
+
+        return realFeedArray
     }
 
 }

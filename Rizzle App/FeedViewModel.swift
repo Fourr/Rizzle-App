@@ -11,12 +11,14 @@ import AVKit
 final class FeedViewModel {
     private let collectionViewManager = FeedCollectionViewManager()
     private let gatherService = GatherService()
+    //let collectionViewHeaderReuseIdentifier = "MyHeaderClass"
 
     func fetchFeed() {
+
         guard let jsonreturn = gatherService.readLocalFile(forName: "assignment") else { return }
         guard let feedData = gatherService.getJSON(data: jsonreturn) else { return }
-        let multirealfeedData = gatherService.ConvertToRealFeed(feed: feedData)
-        let cellViewModels = multirealfeedData[3].map(FeedCellViewModel.init)
+        let realfeedData = gatherService.ConvertToRealFeed(feed: feedData)
+        let cellViewModels = realfeedData.map(FeedCellViewModel.init)
         self.collectionViewManager.cellViewModels = cellViewModels
 
     }
@@ -24,6 +26,7 @@ final class FeedViewModel {
     func configure(collectionView: UICollectionView) {
 
         collectionView.register(UINib(nibName: "FeedCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: FeedCollectionViewCell.self))
+//        collectionView.register(UINib(nibName: collectionViewHeaderReuseIdentifier, bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:collectionViewHeaderReuseIdentifier)
         collectionViewManager.configure(collectionView: collectionView)
     }
     

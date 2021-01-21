@@ -19,11 +19,7 @@ struct FeedCellViewModel {
         cell.titleLabel.text = realfeed.title
         cell.image.image = realfeed.image
         cell.url = realfeed.url
+        cell.titleLabel.textColor = UIColor.black
     }
     
-    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-    }
-    
-
 }
